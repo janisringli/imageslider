@@ -1,27 +1,48 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <SinglePhotoView
+    :imageSources="[
+      'https://source.unsplash.com/random?park',
+      'https://source.unsplash.com/random?dog',
+      'https://source.unsplash.com/random?house',
+      'https://source.unsplash.com/random?tree',
+      'https://source.unsplash.com/random?flower',
+      'https://source.unsplash.com/random?car',
+      'https://source.unsplash.com/random?cat',
+      'https://source.unsplash.com/random?bird',
+      'https://source.unsplash.com/random?bridge',
+      'https://source.unsplash.com/random?water',
+      'https://source.unsplash.com/random?building',
+      'https://source.unsplash.com/random?people',
+      'https://source.unsplash.com/random?person',
+      'https://source.unsplash.com/random?php',
+      'https://source.unsplash.com/random?css',
+      'https://source.unsplash.com/random?javascript',
+      'https://source.unsplash.com/random?brainfuck',
+      'https://source.unsplash.com/random?python',
+      'https://source.unsplash.com/random?ruby',
+      'https://source.unsplash.com/random?java',
+      'https://source.unsplash.com/random?go',
+      'https://source.unsplash.com/random?swift',
+      'https://source.unsplash.com/random?ios',
+      'https://source.unsplash.com/random?android',
+      'https://source.unsplash.com/random?samsung',
+      'https://source.unsplash.com/random?apple',
+      'https://source.unsplash.com/random?robin',
+      'https://source.unsplash.com/random?overflow',
+      'https://source.unsplash.com/random?steve+jobs',
+      'https://source.unsplash.com/random?tbz',
+      'https://source.unsplash.com/random?park',
+    ]"
+  />
 </template>
 
-<script lang="ts">
-import { Options, Vue } from "vue-class-component";
-import HelloWorld from "./components/HelloWorld.vue";
+<script>
+import SinglePhotoView from "@/components/SinglePhotoView/SinglePhotoView.vue";
 
-@Options({
+export default {
+  name: "App",
   components: {
-    HelloWorld,
+    SinglePhotoView,
   },
-})
-export default class App extends Vue {}
+};
 </script>
-
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
