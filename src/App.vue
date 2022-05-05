@@ -30,12 +30,23 @@
       'https://source.unsplash.com/random?robin',
       'https://source.unsplash.com/random?overflow',
       'https://source.unsplash.com/random?steve+jobs',
-      'https://source.unsplash.com/random?tbz',
-      'https://source.unsplash.com/random?park',
+      'https://source.unsplash.com/random?music',
+      'https://source.unsplash.com/random?moon',
     ]"
   />
 </template>
 
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  font-size: 8px;
+}
+</style>
 <script>
 import SinglePhotoView from "@/components/SinglePhotoView/SinglePhotoView.vue";
 

@@ -3,7 +3,9 @@
     <div class="content__top-section">
       <div class="topsection__back-to-gallery">
         <span class="icon-ArrowLeft back-to-gallery__icon" />
-        <p class="subtitle-1 back-to-gallery__text">Zurück zur Gallerie</p>
+        <!-- placeholder for content -->
+        <p class="subtitle-1 back-to-gallery__text"></p>
+        <!-- ----------------------- -->
       </div>
       <div class="top-section__indicator subtitle-1">
         {{ focusedImage + 1 }}/{{ images.length }}
